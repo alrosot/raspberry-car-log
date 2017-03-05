@@ -6,12 +6,8 @@ import org.mapdb.DBMaker;
 import org.mapdb.Serializer;
 import org.springframework.stereotype.Repository;
 
-/**
- * Created by arosot on 04/03/2017.
- */
 @Repository
 public class LogRepositoryImpl implements LogRepository {
-
 
     private final DB db;
 
