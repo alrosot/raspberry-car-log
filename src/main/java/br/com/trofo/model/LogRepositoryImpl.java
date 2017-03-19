@@ -9,9 +9,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class LogRepositoryImpl implements LogRepository {
 
-    private final DB db;
+    private static final DB db;
 
-    public LogRepositoryImpl() {
+    static {
         db = DBMaker.fileDB("raspberry-car-log.db")
                 .transactionEnable()
                 .make();
